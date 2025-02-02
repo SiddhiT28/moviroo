@@ -90,7 +90,7 @@ const App = () => {
 
     const interval = setInterval(() => {
       loadTrendingMovies(); // Fetch new trending movies every 30 seconds
-    }, 3000);
+    }, 30000);
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
